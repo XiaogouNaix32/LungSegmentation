@@ -111,5 +111,5 @@ def elastic_change(pic, sigma=4, alpha=8):
 if __name__ == '__main__':
     im = cv2.imread('1.jpg')
     im = cv2.cvtColor(im, cv2.COLOR_RGB2GRAY)
-    im1 = elastic_transform(im, 4, 5)
+    im1 = elastic_change(im, 4, 5)
     cv2.imwrite('11.jpg', im1)
